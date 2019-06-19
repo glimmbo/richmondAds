@@ -1,0 +1,92 @@
+html,
+body {
+  height: 90px;
+  margin: 0;
+  padding: 0;
+  width: 728px;
+}
+
+#container {
+  height: 90px;
+  width: 728px;
+  overflow: hidden;
+  position: relative;
+}
+
+img {
+  position: absolute;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes appearRise {
+  from {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#bg {
+  animation: appear 1s ease 0s 1 normal forwards;
+  z-index: 1;
+}
+
+
+#pacific {
+  animation: appearRise 1s ease 1s 1 normal forwards;
+  left: 5%;
+  opacity: 0;
+  top: 20%;
+  z-index: 2;
+}
+
+#authentic {
+  animation: appearRise 1s ease 2s 1 normal forwards;
+  left: 5%;
+  opacity: 0;
+  top: 55%;
+  z-index: 2;
+}
+
+#experiences {
+  animation: appearRise 1s ease 3s 1 normal forwards;
+  opacity: 0;
+  font-family: "brandon-grotesque",sans-serif;
+  left: 37.5%;
+  margin: 0;
+  position: absolute;
+  padding: 0;
+  top: 20%;
+  z-index: 2;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #eaaa00;
+  font-size: 1.75em;
+}
+
+#richmond {
+  animation: appearRise 1s ease 4s 1 normal forwards;
+  left: 38%;
+  opacity: 0;
+  top: 55%;
+  z-index: 2;
+}
+
+#discover {
+  animation: appear 1s ease 5s 1 normal forwards;
+  opacity: 0;
+  right: 5%;
+  top: 25%;
+  z-index: 2;
+}
