@@ -45,6 +45,11 @@ img {
   }
 }
 
+@font-face {
+  font-family: Neutra;
+  src: url('../assets/fonts/NeutraText-Book.otf');
+}
+
 #bg {
   animation: appear 1s ease 0s 1 normal forwards;
   z-index: 1;
@@ -76,7 +81,7 @@ img {
 #experiences {
   animation: appear 1s ease 3.5s 1 normal forwards;
   opacity: 0;
-  font-family: "brandon-grotesque",sans-serif;
+  font-family: Neutra;
   left: .5%;
   margin: 0;
   position: absolute;
@@ -86,16 +91,29 @@ img {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: -2px;
-  color: #eaaa00;
+  color: #F5B73C;
   font-size: 1.5em;
 }
 
 #richmond {
-  animation: appear 1s ease 3.5s 1 normal forwards;
-  left: 1%;
+  animation: appear 1s ease 4.5s 1 normal forwards;
   opacity: 0;
+  font-family: Neutra;
+  left: .5%;
+  margin: 0;
+  position: absolute;
+  padding: 0;
   top: 50%;
   z-index: 2;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  color: #F5B73C;
+  font-size: 1.5em;
+}
+
+#bc {
+  color: #FEF09A
 }
 
 #discover {
