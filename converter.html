@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <style>
+    html,body{
+      background: transparent;
+    }
+    canvas {
+      border: 1px solid red;
+    }
+
+    #the_text {
+
+    }
+    @font-face {
+      font-family: Neutra-Title;
+      src: url('./assets/fonts/NeutraDisplay-Titling_0.otf')
+    }
+    h1 {
+      background: transparent;
+      color: black;
+      font-family: Neutra-Title;
+      font-size: 3em;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <body>
+    <h1>Pacific.</h1>
+    <button id="show_img_btn">Convert to Image</button>
+    <div id="show_img_here"></div>
+  </body>
+  <script>
+    window.onload = function() {
+      $("#show_img_btn").on("click", function() {
+        var canvas = document.createElement("canvas");
+        canvas.width = 620; //text div dimensions
+        canvas.height = 80;
+        var ctx = canvas.getContext("2d");
+        ctx.font = "30px Arial"; //changed font, doesn't work
+        var text = $("#the_text").text();
+        ctx.fillText(text, 10, 50);
+        var img = document.createElement("img");
+        img.src = canvas.toDataURL();
+        $("#show_img_here").append(img);
+        // $("body").append(canvas);
+      });
+    };
+  </script>
+</html>

@@ -36,6 +36,15 @@ img {
   }
 }
 
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @font-face {
   font-family: Neutra;
   src: url('../assets/fonts/NeutraText-Book.otf');
@@ -48,70 +57,70 @@ img {
 
 #pacific {
   animation: appearRise 1s ease 1s 1 normal forwards;
-  left: 20%;
+  left: 4%;
   opacity: 0;
-  top: 20%;
+  top: 2%;
   z-index: 2;
 }
 
 #authentic {
   animation: appearRise 1s ease 2s 1 normal forwards;
-  left: 20%;
+  left: 4%;
   opacity: 0;
-  top: 25%;
+  top: 9%;
   z-index: 2;
 }
 
 #experiences {
-  animation: appearRise 1s ease 3s 1 normal forwards;
+  animation: appearRise 2s ease 3s 1 normal forwards;
   opacity: 0;
   font-family: Neutra;
-  left: 19.5%;
+  /* left: 19.5%; */
   margin: 0;
   position: absolute;
   padding: 0;
-  top: 43%;
+  /* top: 30%; */
   z-index: 2;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: -2px;
   color: #F5B73C;
-  font-size: 2em;
+  font-size: 2.75em;
+}
+
+#fade {
+  animation: fade 1s ease 5s 1 normal forwards;
+  left: 4%;
+  position: absolute;
+  top: 16%;
+  z-index: 2;
 }
 
 #richmond {
-  animation: appearRise 1s ease 4s 1 normal forwards;
+  animation: appear 1s ease 6s 1 normal forwards;
   opacity: 0;
   font-family: Neutra;
-  left: 19.5%;
+  left: 4%;
   margin: 0;
   position: absolute;
   padding: 0;
-  top: 48.5%;
+  top: 16%;
   z-index: 2;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: -2px;
   color: #F5B73C;
-  font-size: 2em;
+  font-size: 2.75em;
 }
 
 #bc {
   color: #FEF09A
 }
 
-/* #richmond {
-  animation: appearRise 1s ease 4s 1 normal forwards;
-  left: 20%;
-  opacity: 0;
-  top: 45%;
-  z-index: 2;
-} */
-
 #discover {
-  animation: appear 1s ease 5s 1 normal forwards;
-  left: 20%;
+  animation: appear 1.5s ease 7s 1 normal forwards;
+  left: 4%;
   opacity: 0;
-  top: 65%;
+  top: 25%;
   z-index: 2;
 }

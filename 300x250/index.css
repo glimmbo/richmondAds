@@ -36,6 +36,15 @@ img {
   }
 }
 
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @font-face {
   font-family: Neutra;
   src: url('../assets/fonts/NeutraText-Book.otf');
@@ -63,14 +72,14 @@ img {
 }
 
 #experiences {
-  animation: appearRise 1s ease 3s 1 normal forwards;
+  animation: appearRise 2s ease 3s 1 normal forwards;
   opacity: 0;
   font-family: Neutra;
   left: 4.5%;
   margin: 0;
   position: absolute;
   padding: 0;
-  top: 48%;
+  top: 41%;
   z-index: 2;
   line-height: 1;
   text-transform: uppercase;
@@ -79,15 +88,23 @@ img {
   font-size: 1.75em;
 }
 
+#fade {
+  animation: fade 1s ease 5s 1 normal forwards;
+  left: 4.5%;
+  position: absolute;
+  top: 41%;
+  z-index: 2;
+}
+
 #richmond {
-  animation: appearRise 1s ease 3s 1 normal forwards;
+  animation: appear 1s ease 6s 1 normal forwards;
   opacity: 0;
   font-family: Neutra;
   left: 4.5%;
   margin: 0;
   position: absolute;
   padding: 0;
-  top: 52%;
+  top: 41%;
   z-index: 2;
   line-height: 1;
   text-transform: uppercase;
@@ -100,18 +117,10 @@ img {
   color: #FEF09A
 }
 
-#richmond {
-  animation: appearRise 1s ease 4s 1 normal forwards;
-  left: 5%;
-  opacity: 0;
-  top: 60%;
-  z-index: 2;
-}
-
 #discover {
-  animation: appear 1.5s ease 5s 1 normal forwards;
-  bottom: 9%;
+  animation: appear 1.5s ease 7s 1 normal forwards;
   left: 5%;
   opacity: 0;
+  top: 65%;
   z-index: 2;
 }

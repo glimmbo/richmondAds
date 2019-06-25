@@ -36,6 +36,15 @@ img {
   }
 }
 
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @font-face {
   font-family: Neutra;
   src: url('../assets/fonts/NeutraText-Book.otf');
@@ -49,29 +58,29 @@ img {
 
 #pacific {
   animation: appearRise 1s ease 1s 1 normal forwards;
-  left: 5%;
+  left: 1%;
   opacity: 0;
-  top: 20%;
+  top: 7%;
   z-index: 2;
 }
 
 #authentic {
   animation: appearRise 1s ease 2s 1 normal forwards;
-  left: 5%;
+  left: 1%;
   opacity: 0;
-  top: 55%;
+  top: 34%;
   z-index: 2;
 }
 
 #experiences {
-  animation: appearRise 1s ease 3s 1 normal forwards;
+  animation: appearRise 2s ease 3s 1 normal forwards;
   opacity: 0;
   font-family: Neutra;
-  left: 37.5%;
+  left: .5%;
   margin: 0;
   position: absolute;
   padding: 0;
-  top: 20%;
+  top: 64%;
   z-index: 2;
   line-height: 1;
   text-transform: uppercase;
@@ -80,15 +89,23 @@ img {
   font-size: 1.75em;
 }
 
+#fade {
+  animation: fade 1s ease 5s 1 normal forwards;
+  height: 90px;
+  left: .5%;
+  position: absolute;
+  z-index: 2;
+}
+
 #richmond {
-  animation: appearRise 1s ease 3s 1 normal forwards;
+  animation: appear 1s ease 6s 1 normal forwards;
   opacity: 0;
   font-family: Neutra;
-  left: 37.5%;
+  left: .5%;
   margin: 0;
   position: absolute;
   padding: 0;
-  top: 55%;
+  top: 62%;
   z-index: 2;
   line-height: 1;
   text-transform: uppercase;
@@ -102,9 +119,9 @@ img {
 }
 
 #discover {
-  animation: appear 1s ease 5s 1 normal forwards;
+  animation: appear 1.5s ease 7s 1 normal forwards;
   opacity: 0;
-  right: 5%;
+  left: calc(50% - 80px);
   top: 25%;
   z-index: 2;
 }
